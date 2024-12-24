@@ -8,8 +8,8 @@ def convertToGibberish(word):
     consonants = "bdfghjklmnprstvy"
     
     length = random.randint(len(word),len(word)+2)
-    vowelCount = length // 2
-    consonantCount = length - vowelCount
+    consonantCount = length // 2
+    vowelCount = length - consonantCount
 
     randomVowels = generate_random_characters(vowels, vowelCount)
     randomConsonants = generate_random_characters(consonants, consonantCount)

@@ -37,13 +37,13 @@ while True:
     except sr.RequestError:
         print("         Sorry, there was an error with the speech recognition service")
     
-    break
-    
-    """
     print()
     print("Do you want to exit?")
     choice = input("Enter your choice(Yes/No): ").strip().lower()
     if(choice=="yes"):
+        print()
         print("Exited successfully...")
         break
-    """
+    else:
+        print()
+        print("------------------------------------------------------------------------------------")
