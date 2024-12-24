@@ -1,4 +1,3 @@
-
 import speech_recognition as sr
 listener = sr.Recognizer()
 
@@ -20,6 +19,7 @@ while True:
         words=list(text.split())
         gibberish=[]
         for word in words:
+            word=word.lower()
             if word in dictionary:
                 gibberishWord=dictionary[word]
             else:
